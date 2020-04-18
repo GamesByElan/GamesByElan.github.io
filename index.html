@@ -1,7 +1,1536 @@
 <!DOCTYPE html>
 <html>
 <body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
+<div>
+This document contains text declaring the levels for the Slider game
+
+Before publishing, check that capital r does not exist in a level
+
+Each level is represented by a sequence of characters and new lines like follows:
+
+r r r r r r r r r r
+x r r r r r r r r r
+x x r r r r r r r r
+x x x r r r l r r r
+x x x x r r l r r r
+
+Meanings of characters
+
+r - completely random block
+f - A random straight track or curved track
+h - a house
+t - a tree
+b - a blank block
+l - a straight block facing forwards
+s - a straight block facing sideways
+bl - curve bottom to left
+tl - curve top to left
+tr - curve from top to right
+br - curve from bottom to right
+x - no block
+
+Capital letter - a block with a coin
+
+If the car is to start on the block, the block character will be followed by a 'c' like so:
+lc
+
+Note that the top line of the sequence of characters will appear in the front of the screen when the map is generated
+
+The starting positon of the camera is declared below the level declearation as follows (rotation is in degrees):
+cameraPosition -5 5 -5
+cameraRotation -30 0 0 
+
+The starting rotation of the camera can be declared as follows:
+carRotation 0 0 0
+
+the speed is declared below as follows:
+speed .1
+
+Each level starts with the text "Level [level number]" and ends with "Level complete"
+
+
+The level declerations start here:
+*****
+totalLevels 56
+
+Level 1
+speed .3
+
+b lc b
+b l b
+b l b
+x b l b
+b L b
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+Level 2
+speed .35
+
+f f lc f f
+f L l f f
+x f L l f f
+tr TL f f f
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+Level 3
+speed .4
+
+f f lc f f
+f f l f f
+f S tl S tr
+f f f tr tr
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 4
+speed .4
+
+f f lc f f
+f f l f f
+f f l f f
+F f f f F
+f f F f f
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+Level 5
+speed .4
+
+f f f f f
+f F lc F f
+f f l f f
+f L f L f
+f f f f f
+cameraPosition 0 10 -15
+cameraRotation -20 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+Level 6
+speed .35
+
+r r r lc r r r
+r r r l r r r
+r r r l r r r
+r r r r r r r
+r r F F F r r
+r r r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 7
+speed .6
+
+l lc l
+l l l
+L l l
+l l L
+l l L
+l L l
+l l l
+l l L
+l L l
+l l L
+L l l
+l l l
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+Level 8
+speed .35
+
+r r F lc r r r
+r r r l r r r
+r F r l r F r
+r r r r r r r
+r r r r r r r
+r r r F r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+Level 9
+speed .35
+
+r lc r x x x x x r r r
+r l r x x x x x r F r
+r l r r r r r r r f r
+r br f f f F f f F r r
+r r r r r r r r r r r
+
+cameraPosition 20 5 -5
+cameraRotation -30 -65 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+Level 10
+speed .4
+
+x x x f f f
+x x x f lc f
+x x x f l f
+f f f f l f f f f
+f S s s br s s S f
+f f f f l f f f f
+x x x f l f
+x x x f L f
+x x x f f f
+cameraPosition -20 5 -5
+cameraRotation -30 65 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+Level 11
+speed .4
+
+r f r lc r f r
+r f r l r f r
+r F r l r F r
+r f r f r f r
+r f r f r f r
+r f r f r f r
+r F r f r F r
+r f r f r f r
+
+cameraPosition 0 10 -15
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+Level 12
+speed .35
+
+f r lc r f r f f r f
+f r l r f r F f F f
+f r l r f r f f r f
+f r f r f r F f F f
+f r f r f r f f r f
+
+
+cameraPosition 30 10 -5
+cameraRotation -30 -90 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+Level 13
+speed .35
+
+f f f r lc r f r f
+f F f r l r f F f
+f f f r l r f r f
+f F f r f r f F f
+f f f r f r f r f
+
+
+cameraPosition 0 10 -20
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 14
+speed .35
+
+f f f f lc f f f f
+f f f f l f f f f
+f f f f l f f f f
+t t t t t t t t t
+f F f f f f f F f
+f f F f f f F f f
+f f f f f f f f f
+
+
+cameraPosition 0 10 -20
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 15
+speed .35
+
+t t t t t t t t t
+t f f f l f f f t
+t f f f lc f f f t
+t F f f l f f F t
+t f F f l f F f t
+t f f f f f f f t
+t t t t t t t t t
+
+
+cameraPosition 0 10 -20
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+Level 16
+speed .35
+
+r lc r
+r l r
+r l r
+r r r
+r r r
+r r r
+r r r
+r r r
+r F r
+r r r
+
+
+
+cameraPosition 0 10 -20
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+Level 17
+speed .35
+
+x x x x r lc r
+x x x x r l r
+x x x x r l r
+x x x x r r r
+x x x x r r r
+x x x x r r r
+r r r r r r r r r r r
+r F r r r F r r r F r
+r r r r r r r r r r r
+
+
+
+cameraPosition 0 10 -20
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 18
+speed .35
+
+f lc f x x x f f f
+f l f x x x f L f
+f l f x x x f L f
+f f f x x x f L f
+f f f f f f f l f
+f f f f f f f f f
+f f f f f f f f f
+
+
+cameraPosition 15 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 19
+speed .35
+
+x x x x x lc
+x x x x f l f
+x x x f f l f f
+x x f f f f f f f
+x f f f f f f f f f
+f f f f f t f f f f f
+x f f f f f f f f f 
+x x f f f f f f f
+x x x f F F F f
+x x x x f f f
+x x x x x f
+
+cameraPosition 0 25 15
+cameraRotation 60 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 20
+speed .3
+
+f x f x lc x f x f
+x f x f l f x f x
+f x f x l x f x f
+x f x f x f x f x
+f x f x f x f x f
+x f x f x f x F x
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 21
+speed .3
+
+f f lc f f
+f f l f f
+f f l f f
+f f f f f
+x 
+x x l 
+x x l 
+x x l 
+x
+f f f f f
+f f f f f
+f S S S f
+f f f f f
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+Level 22
+speed .35
+
+r r lc r
+x r tr bl r
+x x r r r r
+x x x r r r r
+x x x x r r r r
+x x x x x r F F r
+x x x x x x r F F r
+x x x x x x x r r r r
+
+cameraPosition 15 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 23
+speed .35
+
+r r r lc r r r
+r r r l r r r
+r r r r r r r
+x
+r r r r r r r
+r r r F r r r
+r r r r r r r
+x
+r r r r r r r
+r r r F r r r
+r r r r r r r
+x
+r r r r r r r
+r r r F r r r
+r r r r r r r
+
+cameraPosition 0 10 12
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 24
+speed .35
+
+r r lc r r
+r r l r r
+r r l r r
+r r r r r
+r r r r r
+l x x x l
+l x x x l
+l x x x l
+l x x x l
+r r r r r
+r r r r r
+r F r F r
+r r r r r
+r r r r r
+cameraPosition 0 10 9
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+Level 25
+speed .35
+
+r lc r s s s r r r
+r l r x x x r F r
+r l r s s s r r r
+l x l x x x l x l
+l x l x x x l x l
+l x l x x x l x l
+r r r s s s r r r
+r F r x x x r F r
+r r r s s s r r r
+cameraPosition 5 10 -10
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 26
+speed .3
+
+x r lc r
+x r l r
+x r l r
+x r F r
+x r r r
+x
+r r r r r
+r F r F r
+r r r r r
+x
+x r r r
+x r F r
+x r r r
+x r F r
+x r r r
+
+cameraPosition 0 10 9
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+Level 27
+speed .27
+
+r r r lc r r r
+x x x l
+r r r l r r r
+x
+r r F r r r r
+x
+r r r r r F r
+x
+r r F r r r r
+x
+r r r r r F r
+x
+r r r r r r r
+
+cameraPosition 0 10 9
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 28
+speed .3
+
+f lc f x x x x x x x x x f f f
+x br bl f x x x x x x x f F f
+x x f f f x x x x x x f f f
+x x x f F f x x x x f f f
+x x x x f f f f f f f f
+x x x x x f f f f f f
+x x x x x x f f f f
+
+cameraPosition 15 10 -11
+cameraRotation 0 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+Level 29
+speed .3
+
+x x r lc r 
+x x r l r
+x x r l r
+r r r r r r r
+r F r r r F r
+r r r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 30
+speed .5
+
+r r r r r lc r r r r r r
+r r r r r l r r r r r r
+r r r r r l r r r r r r
+r r r r r l r r r r r r
+r r r r r S r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r F r r r r r F r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r r F r r r r r r F r r 
+r r r r r r r r r r r r 
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+Level 31
+speed .8
+
+l l lc l
+l l l l
+l l l l
+l l l l
+l l l L
+l L l l
+l l l l
+l L l l
+l l l L
+L l l l
+l l l l
+l l L BR s s s s s s s s s s s s
+l l br s s s s s s s S s s s s s
+l br s s s s S s s s s s s s s s
+br s s s s s s s s s s S s s s s
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 32
+speed .8
+
+
+l lc l l x x x l l L l
+l l l l x x x l l l l
+l l l l x x x l l L l
+l l L br s s s tl l l l
+l L br s S s s s tl l l
+l br s s s s S s S tl l
+br s s s s S s s s s tl 
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 33
+speed .8
+
+l lc l l x x x l l l l
+l l l l x x x L l l l
+l l l l x x x l l l t
+l l L l x x x l l l l
+l l l l x x x l l t l
+L t t l x x x l l l l
+l l l L x x x L t l l
+l l L l x x x l l l l
+l l l l x x x l l L l
+l l L br s s s tl l l l
+l L br s S s s s tl l l
+l br s s s t s s S tl l
+br s s s s S s s s s tl 
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 34
+speed .5
+
+r r r r r lc r r r r r r
+r r r r r l r r r r r r
+r r r r r l r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r F r r
+r r r r r r r r r r r r
+r r F r r r r r r r r r
+r r r r r r r F r r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 35
+speed .5
+
+r r r r r lc r r r r r r
+r r r r r l r r r r r r
+r r r r r l r r r r r r
+r r r r r r r r r r r r
+r F r r r r r r F r r r
+r r r r r r r r r r r r
+r r r r r r r r r r r r
+r r r r r r r r r F r r
+r r r F r r r r r r r r
+r r r r r F r r r r r r
+r r r r r r r r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 36
+speed .45
+
+f f f f lc f f f f
+f f f f l f f f f
+f f f f l f f f f
+f f f f f f f f f
+f f f f f f f f f
+t t t t t t t t t
+t L t L t L t L t
+t t t t t t t t t
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 37
+speed .45
+
+r r r r r lc r r r r r
+r r r r r l r r r r r
+r r r r r l r r r r r
+t t t t t t t t t t t
+t t t t t t t t t t t
+r r r r r r r r r r r
+r r r r r r r r r r r
+r r F r r F r r F r r
+r r r r r r r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+Level 38
+speed .45
+
+r r lc r r
+r r l r r
+r r F r r
+r r r r r
+r r r r r
+x x x x x r r r r r
+x x x x x r r r r r
+x x x x x r r F r r
+x x x x x r r r r r
+x x x x x r r r r r
+
+cameraPosition 5 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 39
+speed .4
+
+r r lc r r
+r r l r r
+r r F r r
+r r r r r
+r r r r r
+x x x x x r r r r r
+x x x x x r r r r r
+x x x x x r r F r r
+x x x x x r r r r r
+x x x x x r r r r r
+x x x x x x x x x x r r r r r
+x x x x x x x x x x r r r r r
+x x x x x x x x x x r r F r r
+x x x x x x x x x x r r r r r
+x x x x x x x x x x r r r r r
+
+cameraPosition 10 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 40
+speed .4
+
+f f f f lc f f f f
+f f f f l f f f f
+f f f f l f f f f
+f f f f f f f f f
+x x x x x x x x x
+t t t t t t t t t
+t L t L t L t L t
+t t t t t t t t t
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+Level 41
+speed .34
+
+f f lc f f
+f f l f f
+f f l f f
+r r r r r
+r F r r r
+r r r r r
+r r F r r
+r r r r r
+r r r r r
+r r r F r
+r F r F r
+r r r r r
+r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Level 42
+speed .3
+
+f x f x lc x f x f
+x f x f l f x f x
+f x f x l x f x f
+x f x f x f x f x
+f x f x f x f x f
+x f x f x f x f x
+f x F x f x F x f
+x f x f x f x f x
+f x f x F x f x f
+x f x f x f x f x
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+
+Level complete
+
+
+
+
+
+Level 43
+speed .4
+
+r r r lc r r r
+x x x l x x x
+r r r l r r r
+x x x x x x x
+r r r r r r r
+x x x x x x x
+r r r r r r r
+x x x x x x x
+r F r r F r r
+x x x x x x x
+r r F r r F r
+x x x x x x x
+r r r r r r r
+
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 44
+speed .4
+
+r r r r lc r r r r
+r r r r l r r r r
+r r r r l r r r r
+r r r r r r r r r
+x x x x x x x x x
+x x x x x x x x x
+x x x x x x x x x
+r r r r r r r r r
+r F r r F r r F r
+r r r r r r r r r
+
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 45
+speed .35
+
+f f lc f f
+f f l f f
+F f f f F
+F F F F F
+
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 46
+speed .35
+
+f f lc f f
+f f l f f
+f F f F f
+f f f f f
+f f F f f
+f f f f f
+f F f F f
+f f f f f
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+Level 47
+speed .35
+
+r r lc r r
+r r l r r
+r F r F r
+r r r r r
+r r F r r
+r r r r r
+r F r F r
+r r r r r
+
+cameraPosition 0 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 48
+speed .35
+
+
+r r r r lc r r r r
+r r r r l r r F r
+r F r x l x r r r
+r r r x x x r r r
+r r r x x x r F r
+r F r r r r r r r
+r r r r F r r r r
+r r r r r r r r r
+
+cameraPosition 0 10 -15
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 49
+speed .35
+
+
+r lc r x r r r
+r l r x r F r
+r l r x r r r
+r r r x r r r
+r r F x F r r
+r r r x r r r
+F r r x r r r
+r r r x r r r
+r r r x r r r
+
+
+cameraPosition 6 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+Level 50
+speed .35
+
+
+r lc r x x x r r r
+r l r x x x r F r
+r l r x x x r r r
+r r r x x x r r r
+r r F x x x F r r
+r r r x x x r r r
+F r r x x x r r r
+r r r x x x r r r
+r r r x x x r r r
+
+
+cameraPosition 8 10 -10
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+Level 51
+speed .35
+
+r r r x f lc f x r r r
+r r r x f l f x r r r
+r f r x f l f x r r r
+r r r x f f f x r f r
+r r r x f f f x r r r
+r r F x f f f x r r r
+r r r x f F f x r r r
+r r r x f f f x F r r
+r r r x f f f x r r r
+
+
+
+cameraPosition 0 10 -15
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+
+
+Level 52
+speed .35
+
+
+f f f lc f f f
+b b b l b b b
+f F f l f f f
+b b b b b b b
+f f f f F f f
+b b b b b b b
+f f F f f f f
+b b b b b b b
+f f f f f F f
+
+
+
+cameraPosition 0 10 -15
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+
+
+
+
+
+
+
+
+
+
+Level 53
+speed .35
+
+
+b b b f lc f b b b
+b b b f l f b b b
+b b b f l f b b b
+f f f b b b f f f
+f F f b b b f F f
+f f f b b b f f f
+b b b f f f b b b
+b b b f F f b b b
+b b b f f f b b b
+f f f b b b f f f
+f F f b b b f F f
+f f f b b b f f f
+
+
+
+cameraPosition 0 10 -15
+cameraRotation -30 0 0
+
+carRotation 0 0 0
+
+Level complete
+</div>
 </body>
 </html>
